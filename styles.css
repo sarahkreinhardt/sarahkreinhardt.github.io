@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: "Lans" , sans-serif;
+  }
+
+  p {
+    color: black;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  img {
+    align-items: center;
+  }
+
+  .subhead {
+    font-size: 10px;
+    color: slategrey;
+    text-align: center;
+  }
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #d8d8d8;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #531516;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #661B1C;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+  /*footer css*/
+  li {
+    display: inline;
+    float: left;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+  }
+  li a {
+    display: block;
+    padding: 15px;
+  }
